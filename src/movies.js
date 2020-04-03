@@ -80,16 +80,3 @@ function turnHoursToMinutes(movies) {
 
 // BONUS Iteration: Best yearly rate average - Best yearly rate average
 
-function bestYearAvg(movies) {
-	if (movies.length === 0) {
-		return null;
-	} else if (movies.length === 1) {
-		return `The best year was ${movies[0].year} with an average rate of ${movies[0].rate}`;
-	}
-
-	let newArray = [];
-
-	movies.forEach(function(movie) {
-		newArray.push({ year: movie.year, rate: [ movie.rate ] });
-	});
-}
